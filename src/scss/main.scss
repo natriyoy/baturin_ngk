@@ -19,3 +19,25 @@ body {
   padding: 0;
   margin: 0;
 }
+.banner {
+  position: relative;
+}
+.banner_text_block {
+   background-color: var(--besh-color);
+   position: absolute;
+   top: 50%;
+   left: 60%;
+   width: 500px;
+   padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .banner_label {
+
+  }
+  .banner_title {
+    text-transform: uppercase;
+    color: var(--kor-color);
+    font-size: 2rem;
+  }
+
+ }

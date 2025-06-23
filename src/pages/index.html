@@ -10,6 +10,9 @@
     <title>Document</title>
 </head>
 <body>
+<main>
+
+
 <!--<h1>Карточки</h1>-->
 
 <!--@@include('../components/_card.html', {-->
@@ -28,5 +31,26 @@
 
 @@include('../components/_header.html', {
 })
+<section class="banner">
+        <img src="./assets/images/fon.webp" alt="Текст сверху картинки" width="100%">
+    <div class="banner_text_block">
+        <div class="banner_label">New Arrival</div>
+        <div class="banner_title"><h1>Discover Our <br>New Collection</h1></div>
+        <div class="banner_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</div>
+
+            @@include('./_button.html', {
+            "padding-x": "72px",
+            "padding-y": "25px",
+            "border-radius": "0px",
+            "title": "Havau"
+            "color": "var(--white-color)",
+            "font-size": "16px"
+            })
+            <div class="banner_control banner_control--next"></div>
+
+    </div>
+</section>
+
+</main>
 </body>
 </html>
