@@ -10,9 +10,12 @@
 @use 'layout/container';
 
 // ==== 4. Components ====
-@use 'components/button';
-@use 'components/card';
+//@use 'components/button';
+//@use 'components/card';
+@use 'components/header';
 
 body {
   background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
 }
