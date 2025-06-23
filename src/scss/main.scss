@@ -13,11 +13,14 @@
 //@use 'components/button';
 //@use 'components/card';
 @use 'components/header';
+@use 'components/_button';
+
 
 body {
   background-color: var(--main-color);
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 .banner {
   position: relative;
@@ -25,19 +28,32 @@ body {
 .banner_text_block {
    background-color: var(--besh-color);
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 60%;
    width: 500px;
-   padding: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+   padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   .banner_label {
-
+    font-weight: bold;
   }
   .banner_title {
     text-transform: uppercase;
     color: var(--kor-color);
     font-size: 2rem;
+  }
+  .banner_title_zag {
+    margin-top: 0;
+  }
+  .banner_description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+  }
+  .banner_navig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
  }
