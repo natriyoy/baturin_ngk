@@ -1,0 +1,31 @@
+/* Центрируем весь контейнер на странице */
+.proba {
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center; /* выравнивание по вертикали */
+  gap: 20px; /* расстояние между картинками */
+
+
+}
+
+/* Стили для каждой карточки (предполагается, что _room.html оборачивает img + title в .image-block) */
+
+.image-block {
+
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+
+.image-block__img {
+
+  border-radius: 12px; /* если нужен закруглённый угол */
+  display: block;
+}
+
+.image-block__title {
+  color: var(--kor-color);
+  margin-top: 10px;
+  font-size: 18px;
+}
