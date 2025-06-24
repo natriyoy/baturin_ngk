@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/header.scss">
     <link rel="stylesheet" href="assets/css/_button.scss">
     <link rel="stylesheet" href="assets/css/_room.scss">
+    <link rel="stylesheet" href="assets/css/_card.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -82,14 +83,21 @@
         <div class="banner_title"><h1 class="banner_title_zag">Discover Our <br>New Collection</h1></div>
         <div class="banner_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</div>
             <div class="banner_navig">
-            <button class="button" style="border-radius: 0px;
-        padding-left: 72px;
-        padding-right: 72px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        background-color: var(--kor-color);">
+                <button class="button" style="border-radius: 0px;
+               padding-left: 72px;
+               padding-right: 72px;
+               padding-top: 25px;
+               padding-bottom: 25px;
+               background-color: var(--kor-color);
+               border-width: none-width;
+               border-style: none-style;
+               border-color: none-color;
+               color: white;
+               font-size: 16px;
+               justify-content: @@justify-content;
+               cursor: pointer;
+               transition: all 0.3s ease;">
     <span>BUY NOW</span>
-
 </button>
 
             <div class="banner_control banner_control--next"><img id="logo-img" src="./assets/images/logo.webp" alt=""></div>
@@ -102,47 +110,698 @@
             <p class="product-range_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="product-range_gallery">
-            <div>
+
             <div class="photo-card" style="padding: 16px;">
-    <img src="./assets/images/img1.webp" alt="Bedroom furniture" style="border-radius: 80px;
+    <img src="./assets/images/img1.webp" alt="Bedroom furniture" style="border-radius: 8px;
 
                 height: auto;">
     <div class="caption" style="margin-top: 12px;
                 text-align: center;
-                font-size: 14px;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Dining
+    </div>
+</div>
+
+            <div class="photo-card" style="padding: 16px;">
+    <img src="./assets/images/img2.webp" alt="Living room furniture" style="border-radius: 8px;
+
+                height: auto;">
+    <div class="caption" style="margin-top: 12px;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Living
+    </div>
+</div>
+
+            <div class="photo-card" style="padding: 16px;">
+    <img src="./assets/images/img3.webp" alt="Dining room furniture" style="border-radius: 8px;
+
+                height: auto;">
+    <div class="caption" style="margin-top: 12px;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
                 color: #333;">
         Bedroom
     </div>
 </div>
         </div>
-            <div>
-            <div class="photo-card" style="padding: 16px;">
-    <img src="./assets/images/img2.webp" alt="Living room furniture" style="border-radius: 80px;
+    </section>
 
-                height: auto;">
-    <div class="caption" style="margin-top: 12px;
-                text-align: center;
-                font-size: 14px;
-                color: #333;">
-        Living Room
-    </div>
-</div>
-        </div>
-            <div>
-            <div class="photo-card" style="padding: 16px;">
-    <img src="./assets/images/img3.webp" alt="Dining room furniture" style="border-radius: 80px;
+    <section>
+        <div class="our_prod">Our Products</div>
+        <div class="product">
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
 
-                height: auto;">
-    <div class="caption" style="margin-top: 12px;
-                text-align: center;
-                font-size: 14px;
-                color: #333;">
-        Dining Room
-    </div>
-</div>
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product1.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #E97171;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            -30%
         </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Syltherine
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Stylish cafe chair
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 2.500.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        Rp 3.500.000
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product2.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #F4F5F7-tag;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Leviosa
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Stylish cafe chair
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 2.500.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product3.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #E97171;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            -50%
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Syltherine
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Luxury big sofa
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 7.000.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        Rp 14.000.000
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product4.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #2EC1AC;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            New
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Respira
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Outdoor bar table and stool
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 500.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product5.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #F4F5F7-tag;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Grifo
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Night lamp
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 1.500.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product6.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #2EC1AC;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            New
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        MuggoMuggo
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Small mug
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 150.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product7.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #E97171;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            -50%
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Pingky
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Cute bed set
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 7.000.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        Rp 14.000.000
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        <div class="product_card" style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: #F4F5F7;
+     width: 285px;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="./assets/images/product8.webp" alt="Dining room furniture" style="border-radius: @@image-border-radius;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: #2EC1AC;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            New
+        </div>
+    </div>
+    <div class="vspom">
+    <div class="caption-product" style="margin-top: 12px;
+                text-align: @@text-align;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;">
+        Potty
+    </div>
+
+    <div class="descriptor-product" style="margin-top: 12px;
+                text-align: @@text-align-desk;
+
+                font-size: 2rem-desk;
+                font-weight: bold-desk;
+                color: #898989;">
+        Minimalist flower pot
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+
+                font-size: 2rem-call;
+                font-weight: bold-call;
+                color: #333-call;">
+        Rp 500.000
+    </div>
+    <div class="сall-product-nosale" style="margin-top: 12px;
+                text-align: @@text-align-call;
+                font-size: 2rem-call;
+
+                font-weight: bold-call;
+                text-decoration: line-through;
+                color: #B0B0B0;">
+        
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+        </div>
+        <div class="gogg">
+        <button class="button" style="border-radius: 0px;
+               padding-left: 72px;
+               padding-right: 72px;
+               padding-top: 25px;
+               padding-bottom: 25px;
+               background-color: transparent;
+               border-width: 1px;
+               border-style: solid;
+               border-color: var(--kor-color);
+               color: var(--kor-color);
+               font-size: 16px;
+               justify-content: @@justify-content;
+               cursor: pointer;
+               transition: all 0.3s ease;">
+    <span>Show More</span>
+</button>
         </div>
     </section>
+    <section class="bar">
+        <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <button class="button" style="border-radius: 0px;
+               padding-left: 72px;
+               padding-right: 72px;
+               padding-top: 25px;
+               padding-bottom: 25px;
+               background-color: @@background-color;
+               border-width: @@border-width;
+               border-style: @@border-style;
+               border-color: @@border-color;
+               color: var(--kor-color)-text;
+               font-size: 16px;
+               justify-content: @@justify-content;
+               cursor: pointer;
+               transition: all 0.3s ease;">
+    <span>BUY NOW</span>
+</button>
+        </div>
+    </section>
+
 </main>
 </body>
 </html>

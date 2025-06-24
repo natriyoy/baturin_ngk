@@ -14,11 +14,12 @@
 //@use 'components/card';
 @use 'components/header';
 @use 'components/_button';
-@use 'components/_button';
+@use 'components/_card';
+
 
 
 body {
-  background-color: var(--main-color);
+
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -58,6 +59,47 @@ body {
   }
 
  }
+.product-range_header {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  .product-range_title{
+    font-size: 1.8rem;
+    line-height: 2px;
+  }
+  .product-range_description {
+    font-size: 1.2rem;
+  }
+}
 .product-range_gallery {
-background-color: var(--besh-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.call-product {
+  display: flex;
+  gap: 10px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1236px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+.vspom {
+  padding: 5%;
+}
+.our_prod {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+.ggg {
+  justify-content: center;
 }

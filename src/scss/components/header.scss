@@ -8,6 +8,7 @@ header {
     display: flex;
     gap: 30px;
     align-items: center;
+
     #logo-img{
       width: 50px;
       height: auto;
@@ -17,7 +18,9 @@ header {
       text-decoration: none;
       font-size: 1.5rem;
     }
-  }
+
+    }
+
 }
 nav ul li a {
   position: relative;
@@ -36,4 +39,37 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+
+header ul li:hover svg path {
+  fill: #B88E2F;
+  stroke: #B88E2F;
+}
+/* Общие стили для всех иконок */
+header ul li svg path {
+  transition: all 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* 1. Иконка "человечка"  */
+header ul li:nth-child(1):hover svg path {
+  fill: #B88E2F;
+  stroke: none; /* Убираем обводку, если она есть */
+}
+
+/* 2. Иконка "лупы"  */
+header ul li:nth-child(2):hover svg path {
+  stroke: #B88E2F; /* Только обводка */
+  fill: none; /* Убираем заливку */
+}
+
+/* 3. Иконка "сердца"  */
+header ul li:nth-child(3):hover svg path {
+  stroke: #B88E2F;
+  fill: none;
+}
+
+/* 4. Иконка "корзины"  */
+header ul li:nth-child(4):hover svg path {
+  fill: #B88E2F;
+  stroke: none;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/header.scss" />
     <link rel="stylesheet" href="assets/css/_button.scss" />
     <link rel="stylesheet" href="assets/css/_room.scss" />
+    <link rel="stylesheet" href="assets/css/_card.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -43,14 +44,16 @@
         <div class="banner_title"><h1 class="banner_title_zag">Discover Our <br>New Collection</h1></div>
         <div class="banner_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</div>
             <div class="banner_navig">
-            @@include('./_button.html', {
-            "padding-x": "72px",
-            "padding-y": "25px",
-            "border-radius": "0px",
-            "title": "BUY NOW",
-            "color": "var(--kor-color)",
-            "font-size": "16px"
-            })
+                @@include('./_button.html', {
+                "padding-x": "72px",
+                "padding-y": "25px",
+                "border-radius": "0px",
+                "title": "BUY NOW",
+                "background-color": "var(--kor-color)",
+                "color-text": "white",
+                "font-size": "16px",
+                "border": "none"
+                })
 
             <div class="banner_control banner_control--next"><img id="logo-img" src="./assets/images/logo.webp" alt=""></div>
             </div>
@@ -62,47 +65,247 @@
             <p class="product-range_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="product-range_gallery">
-            <div>
+
             @@include('./_room.html', {
             "padding": "16px",
             "image-url": "./assets/images/img1.webp",
             "alt-text": "Bedroom furniture",
-            "image-border-radius": "80px",
+            "image-border-radius": "8px",
             "caption-margin": "12px",
             "text-align": "center",
-            "font-size": "14px",
+            "font-size": "2rem",
             "text-color": "#333",
-            "caption-text": "Bedroom"
+            "font-weight": "bold",
+            "caption-text": "Dining"
             })
-        </div>
-            <div>
+
             @@include('./_room.html', {
             "padding": "16px",
             "image-url": "./assets/images/img2.webp",
             "alt-text": "Living room furniture",
-            "image-border-radius": "80px",
+            "image-border-radius": "8px",
             "caption-margin": "12px",
             "text-align": "center",
-            "font-size": "14px",
+            "font-size": "2rem",
             "text-color": "#333",
-            "caption-text": "Living Room"
+            "font-weight": "bold",
+            "caption-text": "Living"
             })
-        </div>
-            <div>
+
             @@include('./_room.html', {
             "padding": "16px",
             "image-url": "./assets/images/img3.webp",
             "alt-text": "Dining room furniture",
-            "image-border-radius": "80px",
+            "image-border-radius": "8px",
             "caption-margin": "12px",
             "text-align": "center",
-            "font-size": "14px",
+            "font-size": "2rem",
             "text-color": "#333",
-            "caption-text": "Dining Room"
+            "font-weight": "bold",
+            "caption-text": "Bedroom"
             })
         </div>
+    </section>
+
+    <section>
+        <div class="our_prod">Our Products</div>
+        <div class="product">
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product1.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Syltherine",
+        "call-text": "Rp 2.500.000",
+        "call-nosale-text": "Rp 3.500.000",
+        "desk-text": "Stylish cafe chair",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#E97171",
+        "image-text": "-30%",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product2.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Leviosa",
+        "call-text": "Rp 2.500.000",
+        "call-nosale-text": "",
+        "desk-text": "Stylish cafe chair",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+
+        "image-text": "",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product3.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Syltherine",
+        "call-text": "Rp 7.000.000",
+        "call-nosale-text": "Rp 14.000.000",
+        "desk-text": "Luxury big sofa",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#E97171",
+        "image-text": "-50%",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product4.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Respira",
+        "call-text": "Rp 500.000",
+        "call-nosale-text": "",
+        "desk-text": "Outdoor bar table and stool",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#2EC1AC",
+        "image-text": "New",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product5.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Grifo",
+        "call-text": "Rp 1.500.000",
+        "call-nosale-text": "",
+        "desk-text": "Night lamp",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+
+        "image-text": "",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product6.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "MuggoMuggo",
+        "call-text": "Rp 150.000",
+        "call-nosale-text": "",
+        "desk-text": "Small mug",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#2EC1AC",
+        "image-text": "New",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product7.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Pingky",
+        "call-text": "Rp 7.000.000",
+        "call-nosale-text": "Rp 14.000.000",
+        "desk-text": "Cute bed set",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#E97171",
+        "image-text": "-50%",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        @@include('./_card.html', {
+        "width": "285px",
+        "width-img": "100%",
+        "image-url": "./assets/images/product8.webp",
+        "alt-text": "Dining room furniture",
+        "caption-margin": "12px",
+        "background-color": "#F4F5F7",
+        "font-size": "2rem",
+        "text-color": "#333",
+        "font-weight": "bold",
+        "caption-text-product": "Potty",
+        "call-text": "Rp 500.000",
+        "call-nosale-text": "",
+        "desk-text": "Minimalist flower pot",
+        "text-decoration-call": "line-through",
+        "text-color-desk": "#898989",
+        "background-color-tag": "#2EC1AC",
+        "image-text": "New",
+        "text-color-call-nosale": "#B0B0B0"
+        })
+        </div>
+        <div class="gogg">
+        @@include('./_button.html', {
+        "padding-x": "72px",
+        "padding-y": "25px",
+
+        "border-radius": "0px",
+        "border-width": "1px", // Толщина обводки
+        "border-style": "solid", // Стиль обводки
+        "border-color": "var(--kor-color)", // Цвет обводки
+        "title": "Show More",
+        "background-color": "transparent", // Прозрачный фон
+        "font-size": "16px",
+        "color-text": "var(--kor-color)" // Цвет текста
+        })
         </div>
     </section>
+    <section class="bar">
+        <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            @@include('./_button.html', {
+            "padding-x": "72px",
+            "padding-y": "25px",
+            "border-radius": "0px",
+            "title": "BUY NOW",
+            "color": "var(--kor-color)",
+            "font-size": "16px"
+            })
+        </div>
+    </section>
+
 </main>
 </body>
 </html>
