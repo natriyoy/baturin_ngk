@@ -1,11 +1,81 @@
-<div class="card">
-    <picture >
-        <source srcset="@@img-sm.webp" media="(max-width: 480px)">
-        <source srcset="@@img-lg.webp" media="(max-width: 800px)">
-        <img src="@@img.webp" alt="@@alt" class="card__image">
-    </picture>
-    <div class="card__body">
-        <h3 class="card__title">@@title</h3>
-        <p class="card__text">@@text</p>
+<div class="product_card"
+     style="padding: @@padding;
+     transition: transform 0.5s ease;
+     background-color: @@background-color;
+     width: @@width;
+
+     position: relative;">
+
+
+    <div style="position: relative;">
+        <img src="@@image-url"
+             alt="@@alt-text"
+             style="border-radius: @@image-border-radius;
+                    width: @@width-img;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;">
+
+
+        <div class="teg" style="position: absolute;
+           bottom: 20px;
+           width: 50px;
+           height: 50px;
+           display: block;
+           align-items: center;
+           display: flex;
+           left: 200px;
+           top: 20px;
+
+           background-color: @@background-color-tag;
+           color: white;
+
+           border-radius: 50%;
+           z-index: 2;">
+            @@image-text
+        </div>
     </div>
+    <div class="vspom">
+    <div class="caption-product"
+         style="margin-top: @@caption-margin;
+                text-align: @@text-align;
+                font-size: @@font-size;
+                font-weight: @@font-weight;
+                color: @@text-color;">
+        @@caption-text-product
+    </div>
+
+    <div class="descriptor-product"
+         style="margin-top: @@caption-margin;
+                text-align: @@text-align-desk;
+
+                font-size: @@font-size-desk;
+                font-weight: @@font-weight-desk;
+                color: @@text-color-desk;">
+        @@desk-text
+    </div>
+    <div class="call-product">
+    <div class="сall-product-sale"
+         style="margin-top: @@caption-margin;
+                text-align: @@text-align-call;
+
+                font-size: @@font-size-call;
+                font-weight: @@font-weight-call;
+                color: @@text-color-call;">
+        @@call-text
+    </div>
+    <div class="сall-product-nosale"
+         style="margin-top: @@caption-margin;
+                text-align: @@text-align-call;
+                font-size: @@font-size-call;
+
+                font-weight: @@font-weight-call;
+                text-decoration: @@text-decoration-call;
+                color: @@text-color-call-nosale;">
+        @@call-nosale-text
+    </div>
+    </div>
+    </div>
+
 </div>
+
