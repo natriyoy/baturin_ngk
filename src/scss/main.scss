@@ -13,6 +13,7 @@
 //@use 'components/button';
 //@use 'components/card';
 @use 'components/header';
+@use 'components/_foorher';
 @use 'components/_button';
 @use 'components/_card';
 
@@ -103,3 +104,92 @@ body {
 .ggg {
   justify-content: center;
 }
+.img1 {
+
+}
+.bar {
+  background-color: #FCF8F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .beat {
+    font-size: 2rem;
+    font-weight: bold;
+
+
+  }
+  .beat1 {
+    margin-right: 10%;
+
+
+  }
+  .gko {
+    margin-bottom: 10%;
+  }
+}
+.lolo {
+  display: flex;
+  gap: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+
+}
+.olp {
+  align-items: center;
+  gap: 170px;
+}
+.image-container {
+  position: relative; /* Необходимо для позиционирования overlay */
+  display: inline-block; /* Или block, в зависимости от макета */
+  width: 100%; /* Можно задать фиксированную ширину */
+}
+
+.img1 {
+  display: block;
+  width: 100%;
+  height: auto; /* Сохраняет пропорции */
+}
+
+.text-overlay {
+  width: 40%;
+  position: absolute;
+  bottom: 20px; /* Отступ от нижнего края */
+  left: 20px; /* Отступ от левого края */
+  right: 20px; /* Отступ от правого края */
+  opacity: 70%;
+  background: var(--white-color); /* Полупрозрачный черный фон */
+  color: black;
+  padding: 15px;
+
+
+}
+.golp {
+
+  position: absolute;
+  bottom: 20px; /* Отступ от нижнего края */
+  left: 210px; /* Отступ от левого края */
+  right: 20px; /* Отступ от правого края */
+
+
+}
+
+/* Дополнительные стили для текста */
+.text-overlay h3 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  font-weight: 300;
+
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.gogg {
+text-align: center;
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+

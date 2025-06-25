@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/_button.scss" />
     <link rel="stylesheet" href="assets/css/_room.scss" />
     <link rel="stylesheet" href="assets/css/_card.scss" />
+    <link rel="stylesheet" href="assets/css/_foorher.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -288,24 +289,121 @@
         </div>
     </section>
     <section class="bar">
-        <div>
-            <div>
-
+        <div class="beat1">
+            <div class="beat">
+                50+ Beautiful rooms<br>
+                inspiration
             </div>
-            <div>
-
+            <div class="gko">
+                Our designer already made a lot of beautiful<br> prototipe of rooms that inspire you
             </div>
             @@include('./_button.html', {
             "padding-x": "72px",
             "padding-y": "25px",
             "border-radius": "0px",
-            "title": "BUY NOW",
-            "color": "var(--kor-color)",
-            "font-size": "16px"
+            "title": "Explore More",
+            "background-color": "var(--kor-color)",
+            "color-text": "white",
+            "font-size": "16px",
+            "border": "none"
             })
         </div>
-    </section>
+            <div class="lolo">
+                <div>
+                    <div class="image-container">
+                        <img class="img1" src="./assets/images/card1.webp" alt="Описание изображения">
+                        <div class="text-overlay">
+                            <div>
+                            <h3>01 - Bed Room</h3>
+                            <p>Inner Peace</p>
+                             </div>
 
+                        </div>
+                        <div class="golp">
+                        @@include('./_button.html', {
+                        "padding-x": "20px",
+                        "padding-y": "20px",
+                        "border-radius": "0px",
+                        "title": "➔",
+                        "background-color": "var(--kor-color)",
+                        "color-text": "white",
+                        "font-size": "16px",
+                        "border": "none"
+                        })
+                    </div>
+                    </div>
+
+            </div>
+                <div>
+                <img class="img2" src="./assets/images/card2.webp">
+                    <div class="olp" style="display: flex; align-items: center; gap: 12px;">
+                        <!-- Большой круг с точкой -->
+                        <svg width="27" height="27" viewBox="0 0 27 27" style="flex-shrink: 0;">
+                            <circle opacity="0.7" cx="13.5" cy="13.5" r="13" stroke="#B88E2F" fill="none"/>
+                            <circle cx="13.5" cy="13.5" r="5" fill="#B88E2F" stroke="#B88E2F"/>
+                        </svg>
+
+                        <!-- Маленькие серые круги -->
+                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                        </svg>
+
+                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                        </svg>
+
+                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <div style="text-align: center;">
+        <div>
+            Share your setup with
+        </div>
+        <div style="font-weight: bold; font-size: 2rem;" >
+            #FuniroFurniture
+        </div>
+    </div>
+    <section style="display: flex;
+align-items: center;
+justify-content: center;">
+
+        <div class="image-grid" style="padding: 10px">
+            <div style="display: flex;">
+                <img  style="padding: 5px" src="./assets/images/grid1.webp" alt="Grid Image 1">
+                <img  style="padding: 5px" src="./assets/images/grid2.webp" alt="Grid Image 2">
+            </div>
+            <div style="padding: 5px">
+
+                <img  style="padding: 5px" src="./assets/images/grid6.webp" alt="Grid Image 6">
+                <img  style="padding: 5px" src="./assets/images/grid7.webp" alt="Grid Image 7" style="margin: 0; padding: 0;">
+            </div>
+        </div>
+            <div >
+                <img  style="padding: 5px" src="./assets/images/grid3.webp" alt="Grid Image 3" class="center-image">
+            </div>
+            <div style="padding: 5px">
+                <div style="padding: 5px">
+                <img  style="padding: 5px" src="./assets/images/grid4.webp" alt="Grid Image 4">
+                <img  style="padding: 5px" src="./assets/images/grid5.webp" alt="Grid Image 5">
+            </div>
+                <div style="padding: 5px">
+                <img  style="padding: 5px" src="./assets/images/grid8.webp" alt="Grid Image 8">
+                <img   style="padding: 5px" src="./assets/images/grid9.webp" alt="Grid Image 9">
+            </div>
+            </div>
+
+
+
+    </section>
+    <footer>
+        @@include('../components/_foother.html', {
+        })
+    </footer>
 </main>
 </body>
 </html>
