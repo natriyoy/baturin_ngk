@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/header.scss" />
+    <link rel="stylesheet" href="assets/css/_button.scss" />
+    <link rel="stylesheet" href="assets/css/_room.scss" />
+    <link rel="stylesheet" href="assets/css/_card.scss" />
+    <link rel="stylesheet" href="assets/css/_foorher.scss" />
+    <link rel="stylesheet" href="assets/css/shop.scss" />
+    <link rel="stylesheet" href="assets/css/_rek.scss" />
+    <link rel="stylesheet" href="assets/css/_produ.scss" />
+    <link rel="stylesheet" href="assets/css/product.scss" />
+    <link rel="stylesheet" href="assets/css/cart.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+@@include('../components/_header.html', {
+})
+<div class="image-with-overlay"
+     style="position: relative;
+            width: 100%;
+
+            margin: 0 auto;">
+
+    <img src="./assets/images/ban.webp"
+         alt="Главный баннер"
+         style="width: 100%;
+                 display: block;">
+
+    <div class="text-overlay"
+         style="position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+background-color: #00000000;
+                 color: black;
+                 padding: 20px 30px;
+                 text-align: center;
+                 border-radius: 5px;
+                 width: 80%;
+                 max-width: 600px;">
+
+        <h2 style="margin: 0 0 10px 0;
+                     font-size: 2em;">
+            Cart
+        </h2>
+
+        <p style="margin: 0;
+                    font-size: 1.2em;">
+            Home > cart
+        </p>
+    </div>
+</div>
+
+
+<div class="dgdegf">
+    <div>
+        <div class="gdgewsf">
+            <ul>
+                <li>Product</li>
+                <li>Price</li>
+                <li>Quantity</li>
+                <li>Subtotal</li>
+            </ul>
+        </div>
+
+        <div class="gogorr">
+            <img src="./assets/images/plp.webp">
+            <div>Asgaard sofa</div>
+            <div>Rs. 250,000.00</div>
+            <div><button class="dswfwf">1</button></div>
+            <div>Rs. 250,000.00</div>
+            <div>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.625 4H17.125V1.8125C17.125 0.847266 16.3402 0.0625 15.375 0.0625H6.625C5.65977 0.0625 4.875 0.847266 4.875 1.8125V4H1.375C0.891016 4 0.5 4.39102 0.5 4.875V5.75C0.5 5.87031 0.598437 5.96875 0.71875 5.96875H2.37031L3.0457 20.2695C3.08945 21.202 3.86055 21.9375 4.79297 21.9375H17.207C18.1422 21.9375 18.9105 21.2047 18.9543 20.2695L19.6297 5.96875H21.2812C21.4016 5.96875 21.5 5.87031 21.5 5.75V4.875C21.5 4.39102 21.109 4 20.625 4ZM15.1562 4H6.84375V2.03125H15.1562V4Z" fill="#B88E2F"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="sfsfs">
+        <div class="wfwfs">Cart Totals</div>
+        <div class="egdeg">
+            <div>Subtotal</div>
+            <div class="fswged">Rs. 250,000.00</div>
+        </div>
+        <div class="egdeg">
+            <div>Total</div>
+            <div class="t3geg">Rs. 250,000.00</div>
+        </div>
+        <button class="outline-button">Check Out</button>
+    </div>
+</div>
+@@include('../components/_rek.html', {
+})
+@@include('../components/_foother.html', {
+})
+<form class="shipping-form">
+    <!-- Первая строка: First Name + Last Name = 453px -->
+    <div class="name-row">
+        <div class="half-width">
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="half-width">
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" required>
+        </div>
+    </div>
+
+    <!-- Все остальные поля -->
+    <div class="full-width">
+        <label for="company">Company Name (Optional)</label>
+        <input type="text" id="company">
+    </div>
+
+    <div class="full-width">
+        <label for="country">Country / Region*</label>
+        <select id="country" required>
+            <option value="">Select country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+        </select>
+    </div>
+
+    <div class="full-width">
+        <label for="address">Street Address*</label>
+        <input type="text" id="address" required placeholder="House number and street">
+    </div>
+
+    <div class="full-width">
+        <label for="city">Town / City*</label>
+        <input type="text" id="city" required>
+    </div>
+
+    <div class="full-width">
+        <label for="province">Province*</label>
+        <select id="province" required>
+            <option value="">Select province</option>
+            <option value="on">Ontario</option>
+            <option value="qc">Quebec</option>
+        </select>
+    </div>
+
+    <div class="full-width">
+        <label for="zip">ZIP Code*</label>
+        <input type="text" id="zip" required>
+    </div>
+
+    <div class="full-width">
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" required>
+    </div>
+
+    <div class="full-width">
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" required>
+    </div>
+
+    <div class="full-width">
+        <label for="notes">Additional Information</label>
+        <textarea id="notes" placeholder="Notes about your order"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Save Address</button>
+</form>
+
+<style>
+    .shipping-form {
+        width: 453px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Общие стили для всех полей */
+    input, select, textarea {
+        width: 100%;
+        height: 75px;
+        padding: 0 20px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    /* Строка с именами */
+    .name-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .half-width {
+        flex: 1;
+        min-width: 0; /* Фикс для flexbox */
+    }
+
+    /* Выпадающие списки */
+    select {
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 14px;
+    }
+
+    /* Текстовое поле */
+    textarea {
+        height: 120px;
+        padding: 15px;
+        resize: vertical;
+    }
+
+    /* Лейблы */
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    /* Кнопка */
+    .submit-btn {
+        width: 100%;
+        height: 75px;
+        background: #000;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #333;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 500px) {
+        .shipping-form {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .name-row {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+</style>
+</body>
+</html>

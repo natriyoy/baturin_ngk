@@ -1,0 +1,489 @@
+.breadcrumbs {
+  background-color: #F9F1E7;
+  padding: 30px 1px 30px 10%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.color-selector {
+  margin: 15px 0;
+}
+
+.color-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.color-circles {
+  display: flex;
+  gap: 12px;
+}
+
+.circle,
+.circle2,
+.circle3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  /* Ваши оригинальные цвета */
+  background-color: #816DFA; /* Фиолетовый */
+}
+
+.circle2 {
+  background-color: #000000; /* Черный */
+}
+
+.circle3 {
+  background-color: #B88E2F; /* Золотой */
+}
+
+/* Общая анимация для всех кругов */
+.circle::before,
+.circle2::before,
+.circle3::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.circle:hover::before,
+.circle2:hover::before,
+.circle3:hover::before {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+/* Индивидуальные цвета обводки при наведении */
+.circle:hover::before {
+  border-color: #816DFA; /* Фиолетовый */
+}
+
+.circle2:hover::before {
+  border-color: #000000; /* Черный */
+}
+
+.circle3:hover::before {
+  border-color: #B88E2F; /* Золотой */
+}
+
+.product-actions-container {
+  padding: 20px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Основная кнопка */
+.primary-btn {
+  padding: 10px 24px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+/* Блок с количеством */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.product-container {
+  justify-content: center;
+  margin-top: 2%;
+}
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  background: #f8f8f8;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.quantity-btn:hover {
+  background: #f0f0f0;
+}
+
+.quantity-value {
+  padding: 0 12px;
+  min-width: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Кнопка сравнения */
+.compare-btn {
+  padding-top: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  background: none;
+  border: 1px solid #ddd;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+}
+
+
+.compare-icon {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.product-container {
+  display: flex;
+}
+.image-grid {
+  display: flex;
+
+  }
+.sdsd {
+  background-color: #F9F1E7;
+  padding: 2%;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+.lpop {
+  margin-left: 5%;
+}
+.dppds {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.dppds2 {
+  color: #9F9F9F;
+  font-size: 1.5rem;
+}
+.folpp {
+  background-color: #F9F1E7;
+  padding: 2%;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+ margin-bottom: 10%;
+}
+.holk {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.gol {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.fgf {
+  width: 400px;
+}
+.colio {
+  display: flex;
+}
+.fpls {
+  display: flex;
+  list-style: none;
+  color: #9F9F9F;
+}
+.solpa {
+  list-style: none;
+}
+
+.size {
+  margin-top: 3%;
+  color: #9F9F9F;
+}
+.digits-pane {
+  display: inline-flex;
+  gap: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.digi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 6px;
+  background: #F9F1E7;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.digi:hover {
+  background:  var(--kor-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.digi:active {
+  width: 40px;
+  transform: translateY(0);
+}
+.color {
+  color: #9F9F9F;
+}
+.colio {
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  color: black;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  border-color: #999;
+}
+
+.quantity-control {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  color: #333;
+}
+
+.quantity-value {
+  padding: 0 10px;
+  min-width: 20px;
+  text-align: center;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.product-actions-2 {
+  /* Основные стили */
+  padding-top: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 4%;
+  background: none;
+  border: 1px solid #ddd;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+
+}
+.hoohl {
+  margin-top: 5%;
+}
+
+.eweo {
+  justify-content: center;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.fswfsw {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 2rem;
+}
+#teet {
+  font-weight: bold;
+}
+.gdeg {
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.catrrr {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.catrrr2 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.fplaa {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.dpdop {
+  display: flex;
+  justify-content: space-around;
+  padding: 6%;
+}
+.fgfff {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.ffdd {
+  border-bottom: 1px solid currentColor;
+}
+.fsfsf {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fsfsfs {
+  background-color: #B88E2F;
+  color: white;
+  padding: 5%;
+  padding-right: 30%;
+  border: none;
+  border-radius: 10px;
+}
+.ffooo {
+display: flex;
+  align-items: center;
+}
+.four-by-four-table {
+  ul {
+    line-height: 30px;
+    list-style: none;
+  }
+}
+.gogorr {
+  display: flex;
+  gap: 40px;
+  color: #9F9F9F;
+  align-items: center;
+}
+.gdgewsf {
+  background-color: #F9F1E7;
+  display: flex;
+
+  margin-bottom: 5%;
+  ul {
+    display: flex;
+
+    list-style: none;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 150px;
+    gap: 60px;
+
+  }
+}
+.dswfwf {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: black;
+}
+.dgdegf {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.sfsfs {
+  background-color: #F9F1E7;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  margin-left: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.wfwfs {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15%;
+}
+.egdeg {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 15%;
+}
+.fswged {
+  color: #9f9f9f;
+}
+.t3geg {
+  color: var(--kor-color);
+}
+.outline-button {
+  /* Основные стили */
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #333; /* Цвет текста */
+  border: 2px solid #333; /* Цвет обводки */
+  border-radius: 15px; /* Скругление углов */
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* Эффекты при наведении */
+  &:hover {
+    color: #fff; /* Цвет текста при наведении */
+    background-color: #333; /* Фон при наведении */
+    border-color: #333; /* Цвет обводки при наведении */
+  }
+
+  /* Активное состояние */
+  &:active {
+    transform: translateY(1px);
+  }
+}

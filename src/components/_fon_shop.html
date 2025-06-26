@@ -1,0 +1,35 @@
+<div class="image-with-overlay"
+     style="position: relative;
+            width: @@width;
+            max-width: @@max-width;
+            margin: @@margin;">
+
+    <img src="@@image-src"
+         alt="@@image-alt"
+         style="width: 100%;
+                 display: block;">
+
+    <div class="text-overlay"
+         style="position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 background-color: @@overlay-bg;
+                 color: @@text-color;
+                 padding: @@padding-y @@padding-x;
+                 text-align: @@text-align;
+                 border-radius: @@border-radius;
+                 width: @@overlay-width;
+                 max-width: @@overlay-max-width;">
+
+        <h2 style="margin: @@heading-margin;
+                     font-size: @@heading-size;">
+            @@heading-text
+        </h2>
+
+        <p style="margin: @@paragraph-margin;
+                    font-size: @@paragraph-size;">
+            @@paragraph-text
+        </p>
+    </div>
+</div>
