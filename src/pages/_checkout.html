@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/header.scss" />
+    <link rel="stylesheet" href="assets/css/_button.scss" />
+    <link rel="stylesheet" href="assets/css/_room.scss" />
+    <link rel="stylesheet" href="assets/css/_card.scss" />
+    <link rel="stylesheet" href="assets/css/_foorher.scss" />
+    <link rel="stylesheet" href="assets/css/_checkout.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+@@include('../components/_header.html', {
+})
+<div class="image-with-overlay"
+     style="position: relative;
+            width: 100%;
+
+            margin: 0 auto;">
+
+    <img src="./assets/images/ban.webp"
+         alt="Главный баннер"
+         style="width: 100%;
+                 display: block;">
+
+    <div class="text-overlay"
+         style="position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+background-color: #00000000;
+                 color: black;
+                 padding: 20px 30px;
+                 text-align: center;
+                 border-radius: 5px;
+                 width: 80%;
+                 max-width: 600px;">
+
+        <h2 style="margin: 0 0 10px 0;
+                     font-size: 2em;">
+            Checkout
+        </h2>
+
+        <p style="margin: 0;
+                    font-size: 1.2em;">
+            Home > Checkout
+        </p>
+    </div>
+</div>
+<main class="container">
+    <div>
+        <div class="dsfsgf">
+            Billing details
+        </div>
+        <form class="shipping-form">
+
+            <div class="name-row">
+                <div class="half-width">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="half-width">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+
+            <div class="full-width">
+                <label for="company">Company Name (Optional)</label>
+                <input type="text" id="company">
+            </div>
+
+            <div class="full-width">
+                <label for="country">Country / Region</label>
+                <select id="country" required>
+                    <option value="">Sri Lanka</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                </select>
+            </div>
+
+            <div class="full-width">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="full-width">
+                <label for="city">Town / City</label>
+                <input type="text" id="city" required>
+            </div>
+
+            <div class="full-width">
+                <label for="province">Province</label>
+                <select id="province" required>
+                    <option value="">Western Province</option>
+                    <option value="on">Ontario</option>
+                    <option value="qc">Quebec</option>
+                </select>
+            </div>
+
+            <div class="full-width">
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" required>
+            </div>
+
+            <div class="full-width">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="full-width">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="full-width">
+
+                <input id="notes" placeholder="Additional Information"></input>
+            </div>
+
+            <button type="submit" class="submit-btn">Save</button>
+        </form>
+
+    </div>
+    <div class="wrfwr">
+        <div class="card-check">
+            <ul>
+                <li>Product</li>
+                <li>Asgaard sofa x 1</li>
+                <li>Subtotal</li>
+                <li>Total</li>
+            </ul>
+            <ul>
+                <li>Subtotal</li>
+                <li>Rs. 250,000.00</li>
+                <li>Rs. 250,000.00</li>
+                <li class="card-check-zoloto">Rs. 250,000.00</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="card-check-block">
+            <div>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="7" r="7" fill="black"/>
+                </svg>
+                Direct Bank Transfer
+            </div>
+            <div>
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+            </div>
+            <div><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="6.5" stroke="#9F9F9F"/>
+            </svg>Direct Bank Transfer
+            </div>
+            <div><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="6.5" stroke="#9F9F9F"/>
+            </svg>Cash On Delivery
+            </div>
+            <div>
+                Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
+            </div>
+            <button class="card-check-button">Place order</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

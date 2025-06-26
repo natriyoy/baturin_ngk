@@ -29,7 +29,6 @@
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
-  /* Ваши оригинальные цвета */
   background-color: #816DFA; /* Фиолетовый */
 }
 
@@ -41,7 +40,7 @@
   background-color: #B88E2F; /* Золотой */
 }
 
-/* Общая анимация для всех кругов */
+
 .circle::before,
 .circle2::before,
 .circle3::before {
@@ -63,17 +62,17 @@
   transform: scale(1.1);
 }
 
-/* Индивидуальные цвета обводки при наведении */
+
 .circle:hover::before {
-  border-color: #816DFA; /* Фиолетовый */
+  border-color: #816DFA;
 }
 
 .circle2:hover::before {
-  border-color: #000000; /* Черный */
+  border-color: #000000;
 }
 
 .circle3:hover::before {
-  border-color: #B88E2F; /* Золотой */
+  border-color: #B88E2F;
 }
 
 .product-actions-container {
@@ -87,7 +86,7 @@
   gap: 12px;
 }
 
-/* Основная кнопка */
+
 .primary-btn {
   padding: 10px 24px;
   background-color: #000;
@@ -375,7 +374,7 @@
   justify-content: space-around;
   padding: 6%;
 }
-.fgfff {
+.fgffff {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10%;

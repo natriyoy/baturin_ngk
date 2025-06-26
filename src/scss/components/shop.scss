@@ -1,11 +1,11 @@
 .dropdown-no-arrow {
-  /* Убираем стандартную стрелку */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 
-  /* Стилизация */
+
   width: 50px;
+  height: 40px;
+  -webkit-appearance: none;
+
+  appearance: none;
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -13,31 +13,24 @@
   font-size: 16px;
   cursor: pointer;
 
-  /* Убираем стрелку в IE */
-  &::-ms-expand {
-    display: none;
-  }
+}
+select::-ms-expand {
+  display: none;
 }
 
-/* Дополнительные стили для контейнера (опционально) */
+
 .custom-dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Стиль при фокусе */
 .dropdown-no-arrow:focus {
   outline: none;
   border-color: #666;
 }
 .quantity-dropdown {
-  /* Убираем стандартную стрелку */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  /* Стилизация */
-  width: 80px; /* Уменьшил ширину для селектора количества */
+  width: 80px;
+  height: 40px;
   padding: 8px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -46,47 +39,38 @@
   cursor: pointer;
   text-align: center;
 
-  /* Убираем стрелку в IE */
   &::-ms-expand {
     display: none;
   }
 }
-
-/* Контейнер */
-.quantity-selector {
-  position: relative;
-  display: inline-block;
+.filter-container {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+ }
+.digits-panel {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
 }
 
-/* Стиль при фокусе */
-.quantity-dropdown:focus {
-  outline: none;
-  border-color: #999;
-  background-color: #fff;
-}
-.filt {
+.filter {
   background-color: #F9F1E7;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   margin-bottom: 60px;
 
 }
-.filt1 {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.digits-panel {
-  display: inline-flex;
-  gap: 30px;
-  padding: 10px;
-margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 8px;
-}
+
+
 
 .digit {
   display: flex;
@@ -138,3 +122,5 @@ margin-top: 50px;
   width: 70px;
   transform: translateY(0);
 }
+
+

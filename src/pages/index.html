@@ -17,33 +17,17 @@
     <title>Главная</title>
 </head>
 <body>
-<main>
-
-
-<!--<h1>Карточки</h1>-->
-
-<!--@@include('../components/_card.html', {-->
-<!--"img": "./assets/images/cat1",-->
-<!--"alt": "Изображение 1",-->
-<!--"title": "Заголовок 1",-->
-<!--"text": "Текст описания карточки 1"-->
-<!--})-->
-
-<!--@@include('../components/_card.html', {-->
-<!--"img": "./assets/images/cat1",-->
-<!--"alt": "Изображение 2",-->
-<!--"title": "Заголовок 2",-->
-<!--"text": "Текст описания карточки 2"-->
-<!--})-->
-
 @@include('../components/_header.html', {
 })
-<section class="banner">
-        <img src="./assets/images/fon.webp" alt="Текст сверху картинки" width="100%">
-    <div class="banner_text_block">
-        <div class="banner_label">New Arrival</div>
-        <div class="banner_title"><h1 class="banner_title_zag">Discover Our <br>New Collection</h1></div>
-        <div class="banner_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</div>
+<main>
+<section class="hero">
+    <img class="hero_background" src="./assets/images/fon.webp" alt="">
+        <div class="hero_content">
+            <div class="hero_badgel">New Arrival</div>
+            <div class="hero_title">
+                <h1 class="banner_title_zag">Discover Our <br>New Collection</h1>
+            </div>
+            <div class="hero_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</div>
             <div class="banner_navig">
                 @@include('./_button.html', {
                 "padding-x": "72px",
@@ -55,17 +39,17 @@
                 "font-size": "16px",
                 "border": "none"
                 })
-
-            <div class="banner_control banner_control--next"><img id="logo-img" src="./assets/images/logo.webp" alt=""></div>
+            <div class="banner_control banner_control--next">
+                <img id="logo-img" src="./assets/images/logo.webp" alt=""></div>
             </div>
     </div>
 </section>
-    <section class="product-range">
-        <div class="product-range_header">
-            <h2 class="product-range_title">Browse The Range</h2>
-            <p class="product-range_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="product-range_gallery">
+<section class="product-range">
+    <div class="product-range_header">
+        <h2 class="product-range_title">Browse The Range</h2>
+        <p class="product-range_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="product-range_gallery">
 
             @@include('./_room.html', {
             "padding": "16px",
@@ -106,11 +90,10 @@
             "caption-text": "Bedroom"
             })
         </div>
-    </section>
-
-    <section>
-        <div class="our_prod">Our Products</div>
-        <div class="product">
+</section>
+<section>
+    <div class="our_prod">Our Products</div>
+    <div class="product">
         @@include('./_card.html', {
         "width": "285px",
         "width-img": "100%",
@@ -126,8 +109,8 @@
         "call-nosale-text": "Rp 3.500.000",
         "desk-text": "Stylish cafe chair",
         "text-decoration-call": "line-through",
-        "text-color-desk": "#898989",
-        "background-color-tag": "#E97171",
+        "text-color-desk": "var(--gray-color)",
+        "background-color-tag": "var(--sale-color)",
         "image-text": "-30%",
         "text-color-call-nosale": "#B0B0B0"
         })
@@ -147,7 +130,6 @@
         "desk-text": "Stylish cafe chair",
         "text-decoration-call": "line-through",
         "text-color-desk": "#898989",
-
         "image-text": "",
         "text-color-call-nosale": "#B0B0B0"
         })
@@ -272,31 +254,31 @@
         "text-color-call-nosale": "#B0B0B0"
         })
         </div>
-        <div class="gogg">
+        <div class="product_button">
         @@include('./_button.html', {
         "padding-x": "72px",
         "padding-y": "25px",
 
         "border-radius": "0px",
-        "border-width": "1px", // Толщина обводки
-        "border-style": "solid", // Стиль обводки
-        "border-color": "var(--kor-color)", // Цвет обводки
+        "border-width": "1px",
+        "border-style": "solid",
+        "border-color": "var(--kor-color)",
         "title": "Show More",
-        "background-color": "transparent", // Прозрачный фон
+        "background-color": "transparent",
         "font-size": "16px",
-        "color-text": "var(--kor-color)" // Цвет текста
+        "color-text": "var(--kor-color)"
         })
         </div>
-    </section>
-    <section class="bar">
-        <div class="beat1">
-            <div class="beat">
-                50+ Beautiful rooms<br>
-                inspiration
-            </div>
-            <div class="gko">
-                Our designer already made a lot of beautiful<br> prototipe of rooms that inspire you
-            </div>
+</section>
+<section class="rooms_showcase">
+    <div class="showcase_intro">
+        <div class="intro_heading">
+            50+ Beautiful rooms<br>
+            inspiration
+        </div>
+        <div class="intro_description">
+            Our designer already made a lot of beautiful<br> prototipe of rooms that inspire you
+        </div>
             @@include('./_button.html', {
             "padding-x": "72px",
             "padding-y": "25px",
@@ -308,18 +290,17 @@
             "border": "none"
             })
         </div>
-            <div class="lolo">
-                <div>
-                    <div class="image-container">
-                        <img class="img1" src="./assets/images/card1.webp" alt="Описание изображения">
-                        <div class="text-overlay">
-                            <div>
+        <div class="showcase_gallery">
+            <div class="gallery-card">
+                <div class="card_container">
+                    <img class="card_image" src="./assets/images/card1.webp" alt="Описание изображения">
+                    <div class="card_overlay">
+                        <div>
                             <h3>01 - Bed Room</h3>
                             <p>Inner Peace</p>
-                             </div>
-
                         </div>
-                        <div class="golp">
+                    </div>
+                    <div class="card_action">
                         @@include('./_button.html', {
                         "padding-x": "20px",
                         "padding-y": "20px",
@@ -330,37 +311,31 @@
                         "font-size": "16px",
                         "border": "none"
                         })
-                    </div>
-                    </div>
-
-            </div>
-                <div>
-                <img class="img2" src="./assets/images/card2.webp">
-                    <div class="olp" style="display: flex; align-items: center; gap: 12px;">
-                        <!-- Большой круг с точкой -->
-                        <svg width="27" height="27" viewBox="0 0 27 27" style="flex-shrink: 0;">
-                            <circle opacity="0.7" cx="13.5" cy="13.5" r="13" stroke="#B88E2F" fill="none"/>
-                            <circle cx="13.5" cy="13.5" r="5" fill="#B88E2F" stroke="#B88E2F"/>
-                        </svg>
-
-                        <!-- Маленькие серые круги -->
-                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
-                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                        </svg>
-
-                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
-                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                        </svg>
-
-                        <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
-                            <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                        </svg>
-                    </div>
+                        </div>
                 </div>
             </div>
-
-    </section>
-    <div style="text-align: center;">
+            <div>
+                <img class="img2" src="./assets/images/card2.webp">
+                <div class="controls_indicator" style="display: flex; align-items: center; gap: 12px;">
+                    <svg width="27" height="27" viewBox="0 0 27 27" style="flex-shrink: 0;">
+                        <circle opacity="0.7" cx="13.5" cy="13.5" r="13" stroke="#B88E2F" fill="none"/>
+                        <circle cx="13.5" cy="13.5" r="5" fill="#B88E2F" stroke="#B88E2F"/>
+                    </svg>
+                    <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                        <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                    </svg>
+                    <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                        <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                    </svg>
+                    <svg width="11" height="11" viewBox="0 0 11 11" style="flex-shrink: 0;">
+                        <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+</section>
+    <div style="text-align: center; margin-top: 2%;
+">
         <div>
             Share your setup with
         </div>
@@ -368,42 +343,36 @@
             #FuniroFurniture
         </div>
     </div>
-    <section style="display: flex;
-align-items: center;
-justify-content: center;">
-
-        <div class="image-grid" style="padding: 10px">
-            <div style="display: flex;">
-                <img  style="padding: 5px" src="./assets/images/grid1.webp" alt="Grid Image 1">
-                <img  style="padding: 5px" src="./assets/images/grid2.webp" alt="Grid Image 2">
+    <section class="gallery-section">
+        <div class="gallery-container" >
+            <div class="gallery-column--left">
+                <img class="gallery-image" src="./assets/images/grid1.webp" alt="Grid Image 1">
+                <img class="gallery-image" src="./assets/images/grid2.webp" alt="Grid Image 2">
             </div>
-            <div style="padding: 5px">
+            <div>
 
-                <img  style="padding: 5px" src="./assets/images/grid6.webp" alt="Grid Image 6">
-                <img  style="padding: 5px" src="./assets/images/grid7.webp" alt="Grid Image 7" style="margin: 0; padding: 0;">
+                <img class="gallery-image" src="./assets/images/grid6.webp" alt="Grid Image 6">
+                <img class="gallery-image" src="./assets/images/grid7.webp" alt="Grid Image 7">
             </div>
         </div>
-            <div >
-                <img  style="padding: 5px" src="./assets/images/grid3.webp" alt="Grid Image 3" class="center-image">
+            <div class="gallery-column--center">
+                <img class="gallery-image" src="./assets/images/grid3.webp" alt="Grid Image 3" class="center-image">
             </div>
-            <div style="padding: 5px">
-                <div style="padding: 5px">
-                <img  style="padding: 5px" src="./assets/images/grid4.webp" alt="Grid Image 4">
-                <img  style="padding: 5px" src="./assets/images/grid5.webp" alt="Grid Image 5">
+            <div class="gallery-column--right">
+                <div>
+                <img class="gallery-image" src="./assets/images/grid4.webp" alt="Grid Image 4">
+                <img class="gallery-image" src="./assets/images/grid5.webp" alt="Grid Image 5">
             </div>
-                <div style="padding: 5px">
-                <img  style="padding: 5px" src="./assets/images/grid8.webp" alt="Grid Image 8">
-                <img   style="padding: 5px" src="./assets/images/grid9.webp" alt="Grid Image 9">
+                <div>
+                <img class="gallery-image" src="./assets/images/grid8.webp" alt="Grid Image 8">
+                <img class="gallery-image" src="./assets/images/grid9.webp" alt="Grid Image 9">
             </div>
             </div>
-
-
-
     </section>
-    <footer>
+
         @@include('../components/_foother.html', {
         })
-    </footer>
+
 </main>
 </body>
 </html>

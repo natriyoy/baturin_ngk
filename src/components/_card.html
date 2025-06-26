@@ -1,82 +1,133 @@
 <a href="_productio.html" style="text-decoration: none; color: black;">
-<div class="product_card"
-     style="padding: @@padding;
+    <div class="product_card"
+         style="padding: @@padding;
      transition: transform 0.5s ease;
      background-color: @@background-color;
      width: @@width;
+     position: relative;
+     overflow: hidden;
+     border-radius: @@border-radius;">
 
-     position: relative;">
+        <!-- Затемняющий оверлей -->
+        <div class="hover-overlay"
+             style="position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0);
+                transition: background 0.5s ease;
+                z-index: 3;
+                pointer-events: none;">
+        </div>
 
+        <!-- Кнопка -->
+        <button class="hover-button"
+                style="position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%) scale(0.9);
+                   opacity: 0;
+                   transition: all 0.5s ease;
+                   z-index: 4;
+                   padding: 12px 24px;
+                   background: white;
+                   color: var(--kor-color);
+                   border: none;
+                   border-radius: 4px;
+                   cursor: pointer;
+                   font-weight: bold;
+                   box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            Add to cart
+        </button>
 
-    <div style="position: relative;">
-        <img src="@@image-url"
-             alt="@@alt-text"
-             style="border-radius: @@image-border-radius;
+        <div style="position: relative; z-index: 2;">
+            <img src="@@image-url"
+                 alt="@@alt-text"
+                 style="border-radius: @@image-border-radius;
                     width: @@width-img;
                     height: auto;
                     position: relative;
-                    z-index: 1;">
+                    z-index: 1;
+                    transition: transform 0.5s ease;">
 
-
-        <div class="teg" style="position: absolute;
+            <div class="teg" style="position: absolute;
            bottom: 20px;
            width: 50px;
            height: 50px;
-           display: block;
-           align-items: center;
            display: flex;
+           justify-content: center;
+           align-items: center;
            left: 200px;
            top: 20px;
-
            background-color: @@background-color-tag;
            color: white;
-
            border-radius: 50%;
-           z-index: 2;">
-            @@image-text
+           z-index: 4;
+           font-weight: bold;
+           transition: transform 0.3s ease;">
+                @@image-text
+            </div>
         </div>
-    </div>
-    <div class="vspom">
-    <div class="caption-product"
-         style="margin-top: @@caption-margin;
-                text-align: @@text-align;
-                font-size: @@font-size;
-                font-weight: @@font-weight;
-                color: @@text-color;">
-        @@caption-text-product
-    </div>
 
-    <div class="descriptor-product"
-         style="margin-top: @@caption-margin;
-                text-align: @@text-align-desk;
+        <!-- Контент карточки -->
+        <div class="vspom" style="position: relative; z-index: 2; padding: 15px;">
+            <div class="caption-product"
+                 style="margin-top: @@caption-margin;
+                    text-align: @@text-align;
+                    font-size: @@font-size;
+                    font-weight: @@font-weight;
+                    color: @@text-color;
+                    transition: color 0.3s ease;">
+                @@caption-text-product
+            </div>
 
-                font-size: @@font-size-desk;
-                font-weight: @@font-weight-desk;
-                color: @@text-color-desk;">
-        @@desk-text
-    </div>
-    <div class="call-product">
-    <div class="сall-product-sale"
-         style="margin-top: @@caption-margin;
-                text-align: @@text-align-call;
+            <div class="descriptor-product"
+                 style="margin-top: @@caption-margin;
+                    text-align: @@text-align-desk;
+                    font-size: @@font-size-desk;
+                    font-weight: @@font-weight-desk;
+                    color: @@text-color-desk;
+                    line-height: 1.4;
+                    min-height: 40px;">
+                @@desk-text
+            </div>
 
-                font-size: @@font-size-call;
-                font-weight: @@font-weight-call;
-                color: @@text-color-call;">
-        @@call-text
-    </div>
-    <div class="сall-product-nosale"
-         style="margin-top: @@caption-margin;
-                text-align: @@text-align-call;
-                font-size: @@font-size-call;
+            <div class="call-product" style="margin-top: 15px;">
+                <div class="сall-product-sale"
+                     style="display: inline-block;
+                        margin-right: 10px;
+                        font-size: @@font-size-call;
+                        font-weight: @@font-weight-call;
+                        color: @@text-color-call;
+                        background: @@sale-bg-color;
+                        padding: 5px 10px;
+                        border-radius: 4px;">
+                    @@call-text
+                </div>
 
-                font-weight: @@font-weight-call;
-                text-decoration: @@text-decoration-call;
-                color: @@text-color-call-nosale;">
-        @@call-nosale-text
-    </div>
-    </div>
-    </div>
+                <div class="сall-product-nosale"
+                     style="display: inline-block;
+                        text-decoration: @@text-decoration-call;
+                        font-size: @@font-size-call;
+                        font-weight: @@font-weight-call;
+                        color: @@text-color-call-nosale;
+                        position: relative;">
+                    @@call-nosale-text
+                    <span style="position: absolute;
+                       top: 50%;
+                       left: 0;
+                       right: 0;
+                       height: 1px;
+                       background: @@text-color-call-nosale;
+                       transform: translateY(-50%) scaleX(0);
+                       transform-origin: right;
+                       transition: transform 0.3s ease;">
+                </span>
+                </div>
+            </div>
+        </div>
 
-</div>
+    </div>
 </a>
+

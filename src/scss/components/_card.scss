@@ -1,0 +1,36 @@
+
+.product_card {
+  transform-origin: center;
+}
+
+.product_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product_card:hover .hover-overlay {
+  background: rgba(0,0,0,0.5) !important;
+}
+
+.product_card:hover .hover-button {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+.product_card:hover img {
+  transform: scale(1.05);
+}
+
+.product_card:hover .teg {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.product_card:hover .caption-product {
+  color: #333 !important;
+}
+
+.product_card:hover .сall-product-nosale span {
+  transform: translateY(-50%) scaleX(1);
+  transform-origin: left;
+}
