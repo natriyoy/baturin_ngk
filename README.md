@@ -1,2 +1,0 @@
-# baturin_ngk
-ggugugug
